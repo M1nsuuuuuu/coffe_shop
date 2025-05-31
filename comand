@@ -6,6 +6,7 @@ composer install
 22057_coffe - название бд
 22057 - логи
 vnpcjt - пароль
+прописать команды дальше в терминал после заполнения
 php artisan migrate:fresh
 php artisan db:seed
 php artisan key:generate
