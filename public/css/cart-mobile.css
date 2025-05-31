@@ -1,0 +1,58 @@
+/* Mobile Cart Styles */
+@media screen and (max-width: 767px) {
+    .cart-sidebar {
+        width: 100%;
+        max-width: 100%;
+        right: -100%;
+    }
+    
+    .cart-sidebar.open {
+        right: 0;
+    }
+    
+    .cart-header {
+        padding: 15px;
+    }
+    
+    .cart-items {
+        padding: 10px;
+    }
+    
+    .cart-item {
+        margin-bottom: 15px;
+    }
+    
+    .cart-item-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .cart-item-info {
+        padding-left: 10px;
+    }
+    
+    .cart-item-name {
+        font-size: 14px;
+    }
+    
+    .cart-item-volume, .cart-item-price {
+        font-size: 12px;
+    }
+    
+    .cart-item-quantity {
+        margin-top: 5px;
+    }
+    
+    .quantity-btn {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .cart-footer {
+        padding: 15px;
+    }
+    
+    .checkout-btn {
+        width: 100%;
+    }
+}

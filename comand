@@ -1,0 +1,12 @@
+Прописать в терминал команды
+cp .env.example .env
+composer install
+после создания .env
+заполнить его данными:
+22057_coffe - название бд
+22057 - логи
+vnpcjt - пароль
+php artisan migrate:fresh
+php artisan db:seed
+php artisan key:generate
+php artisan serve

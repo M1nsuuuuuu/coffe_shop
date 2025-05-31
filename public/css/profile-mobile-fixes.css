@@ -1,0 +1,331 @@
+/* Mobile fixes for profile page - specifically for 400x856px */
+@media screen and (max-width: 400px) {
+  /* Remove the close button in mobile view */
+  .profile-container .close-btn {
+    display: none;
+  }
+
+  /* Container adjustments */
+  .profile-container {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Reorder profile sections - this is the key change */
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Force saved drinks to appear first */
+  .profile-section.favorites {
+    order: 1;
+  }
+
+  /* Force order history to appear second */
+  .profile-section.orders {
+    order: 2;
+  }
+
+  /* Force settings to appear last */
+  .profile-section.settings {
+    order: 3;
+  }
+
+  /* Basic styling for all sections */
+  .profile-section {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Simple vertical layout for order items */
+  .orders-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .order-item {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+
+  /* Simple vertical layout for favorites */
+  .favorites-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .favorite-item {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Profile header adjustments */
+  .profile-header {
+    padding: 15px 10px;
+  }
+
+  .profile-header h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .user-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-avatar {
+    margin-bottom: 10px;
+  }
+
+  /* Profile sections */
+  /*.profile-section {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }*/
+
+  .profile-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  /* Order history vertical layout */
+  /*.orders-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }*/
+
+  /*.order-item {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }*/
+
+  .order-header {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eee;
+  }
+
+  .order-header span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .order-drinks {
+    padding: 10px;
+  }
+
+  .order-drink {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .order-drink:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .order-drink img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+
+  .order-drink-info {
+    margin-left: 10px;
+    flex: 1;
+  }
+
+  .order-drink-info h4 {
+    font-size: 14px;
+    margin: 0 0 3px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 280px;
+  }
+
+  .order-drink-info p {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+  }
+
+  /* Favorites section */
+  /*.favorites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }*/
+
+  /*.favorite-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+  }*/
+
+  .favorite-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+
+  .favorite-info {
+    margin-left: 10px;
+    flex: 1;
+  }
+
+  .favorite-info h4 {
+    font-size: 14px;
+    margin: 0 0 3px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 280px;
+  }
+
+  .favorite-info p {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+  }
+
+  .favorite-price {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  /* Cart sidebar adjustments for profile page */
+  .cart-sidebar {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .cart-header {
+    padding: 10px;
+  }
+
+  .cart-items {
+    max-height: calc(856px - 120px);
+    overflow-y: auto;
+  }
+
+  .cart-item {
+    padding: 10px;
+  }
+
+  .cart-item-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cart-item-details {
+    margin-left: 10px;
+  }
+
+  .cart-item-name {
+    font-size: 14px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cart-item-price {
+    font-size: 14px;
+  }
+
+  .cart-footer {
+    padding: 10px;
+  }
+
+  /* Settings section */
+  .settings-form {
+    width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+
+  .btn-save {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  /* Logout button */
+  .logout-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+}
+
+/* Ensure cart works properly at exactly 400px width */
+@media screen and (width: 400px) {
+  .cart-sidebar {
+    width: 400px;
+    right: -400px;
+  }
+
+  .cart-sidebar.open {
+    right: 0;
+  }
+
+  .cart-items {
+    max-height: 650px;
+  }
+}

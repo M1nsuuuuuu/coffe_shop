@@ -1,0 +1,246 @@
+/* Mobile Responsive Styles */
+@media screen and (max-width: 767px) {
+    /* General Styles */
+     .login-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .forgot-password-link {
+    font-size: 12px;
+    color: #00baf0;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+
+  .btn.btn-primary {
+    flex: 0 0 auto;
+  }
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Header Styles */
+    .header-content {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .header-left {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        max-width: 40px;
+    }
+
+    .address-dropdown {
+        font-size: 12px;
+    }
+
+    .main-nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        overflow-x: auto;
+        padding: 5px 0;
+        margin: 0;
+    }
+
+    .main-nav ul li {
+        flex: 0 0 auto;
+        margin: 0 5px;
+    }
+
+    .main-nav ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .nav-icon {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 5px;
+    }
+
+    .nav-icon img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .header-right {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .cart-icon, .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    .cart-icon img, .profile img, .avatar {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 5px;
+    }
+
+    .cart-icon span, .profile span {
+        display: none;
+    }
+
+    /* Drinks Grid Styles */
+    .drinks-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .drink-card {
+        width: 100%;
+    }
+
+    .drink-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer Styles */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+
+    .footer-logo img {
+        max-width: 40px;
+    }
+
+    /* Cart Sidebar Styles */
+    .cart-sidebar {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cart-item {
+        padding: 10px;
+    }
+
+    .cart-item-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cart-item-info {
+        padding-left: 10px;
+    }
+
+    /* Auth Pages Styles */
+    .auth-container {
+        padding: 20px;
+    }
+
+    .auth-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .close-btn {
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+    }
+
+    /* Drink Detail Page */
+    .drink-detail {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .drink-info {
+        width: 100%;
+    }
+
+    .volume-selector {
+        width: 100%;
+    }
+
+    /* Profile Page */
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .profile-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .orders-list, .favorites-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .order-item, .favorite-item {
+        padding: 10px;
+    }
+}
+
+/* Specific Mobile Styles for 400x856 */
+@media screen and (max-width: 400px) {
+    /* Header Styles */
+    .main-nav ul li {
+        margin: 0 3px;
+    }
+
+    .main-nav ul li a {
+        font-size: 10px;
+    }
+
+    .nav-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Auth Forms */
+    .auth-form h1 {
+        font-size: 24px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    /* Drink Detail */
+    .drink-name {
+        font-size: 24px;
+    }
+
+    .drink-description {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,23 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="drinks-grid">
+        @foreach($drinks as $drink)
+        <div class="drink-card">
+            <a href="{{ route('drinks.show', $drink->id) }}">
+                <div class="drink-image">
+                    <img src="{{ asset('storage/' . $drink->image) }}" alt="{{ $drink->name }}">
+                    <span class="badge hit">Хит</span>
+                </div>
+            </a>
+            <div class="drink-info">
+                <h3 class="drink-name">{{ $drink->name }}</h3>
+                <p class="drink-description">{{ $drink->description }}</p>
+                <p class="drink-price">от {{ $drink->prices[0] }}₽</p>
+            </div>
+        </div>
+        @endforeach
+    </div>
+</div>
+@endsection
